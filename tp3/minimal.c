@@ -426,6 +426,7 @@ int main(int argc, char** argv)
 	GLuint firstArm = createFirstArmIDList();
 	GLuint secondArm = createSecondArmIDList();
 	GLuint thirdArm = createThirdArmIDList();
+	printf("%d %d %d \n",firstArm,secondArm,thirdArm);
 
 	int alpha = 45;
 	int beta = -10;
@@ -467,9 +468,9 @@ int main(int argc, char** argv)
 				glPopMatrix();
 			glPopMatrix();
 
-			alpha = alpha + 10;
-			beta = beta + 10;
-			gamma = gamma + 10;
+			alpha = alpha + 1;
+			beta = beta + 1;
+			gamma = gamma + 1;
 		}
 		cross(cursX,cursY,curCol);
 	
